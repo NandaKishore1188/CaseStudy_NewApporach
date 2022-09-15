@@ -104,68 +104,68 @@ img {
 
 
 /* HEADER */
- .logob{
- width: 100px;
- height: 80px;
- cursor: pointer;
- }
- 
- nav{
+.logob {
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+}
+
+nav {
   width: 100%;
   margin: auto;
   padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
- }
+}
 
- nav ul li{
-     display: inline-block;
-     list-style: none;
-     margin: 10px 20px;
- }
- 
- nav ul li a{
-     text-decoration: none;
-     color: #606163;
- }
- 
- nav ul li a:hover{
-     color: #ff4321;
- } 
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
 
- .d {
+nav ul li a {
+  text-decoration: none;
+  color: #606163;
+}
+
+nav ul li a:hover {
+  color: #ff4321;
+}
+
+.d {
   display: flex;
   align-items: center;
 }
 
 
- .align-center {
+.align-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   nav {
     padding: 16px 0;
   }
 
 
-  .icons{
+  .icons {
     display: none;
   }
 
- 
-  .logob{
+
+  .logob {
     width: 100px;
     height: 80px;
     cursor: pointer;
-    } 
   }
-  
-  
-  
+}
+
+
+
 
 /* Intro */
 .intro {
@@ -176,10 +176,10 @@ img {
   background-color: lightgray;
   background-image: url('https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg?w=996&t=st=1663094726~exp=1663095326~hmac=48ae989df7926ddbbd75b287ad9e24c309d67c69f660f41b5000e5c3b54c4a00');
   background-repeat: no-repeat;
-  background-attachment: scroll; 
+  background-attachment: scroll;
   background-size: 100% 100%;
-background-blend-mode: lighten;
-scale: inherit;
+  background-blend-mode: lighten;
+  scale: inherit;
 }
 
 .intro-content {
@@ -212,7 +212,7 @@ scale: inherit;
 }
 
 
-.intro  h3 {
+.intro h3 {
   font-weight: 400;
   font-size: 40px;
   text-align: center;
@@ -254,7 +254,7 @@ scale: inherit;
 }
 
 .benefit .icon {
-  color:  #ff4321;
+  color: #ff4321;
   font-size: 64px;
 }
 
@@ -280,7 +280,7 @@ scale: inherit;
 }
 
 .h span {
-  color:  #ff4321;
+  color: #ff4321;
 }
 
 .ac-center {
@@ -357,6 +357,7 @@ scale: inherit;
   grid-row-start: 1;
   grid-row-end: 9;
 }
+
 .item-3 {
   grid-column-start: 3;
   grid-column-end: 5;
@@ -390,12 +391,14 @@ scale: inherit;
     grid-row-start: 7;
     grid-row-end: 11;
   }
+
   .item-3 {
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 11;
     grid-row-end: 15;
   }
+
   .item-4 {
     grid-column-start: 1;
     grid-column-end: 7;
@@ -403,54 +406,91 @@ scale: inherit;
     grid-row-end: 19;
   }
 }
-    
-    /*footer*/
-    #footer {
-      
-        box-sizing: border-box;
-        font-family: 'Poppins',sans-serif;
-        position: relative;
-        min-height: 50vh;
-        padding: 50px 100px;
-        background-color: black;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-     }
-    
-     
-     #footer ul li{
-        color: white;
-        list-style:none;
-        margin: 30px 40px;
-        padding-top: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    #footer ul li a{
-        text-decoration: none;
-        color: white;
-        font-family: sans-serif;
-    }
-    
-    #footer ul li a:hover{
-        color: #ff4321;
-    } 
-    
-    
-    .social-links{
-        margin-left: 8%;
-        margin-top: 100px;
-    }
-    
-    .social-links a{
-        font-size: 30px;
-        color: #606163;
-        margin-right: 20px;
-    }
-    
-    .social-links a:hover{
-     color: #ff4321;
-    }
- 
+
+/*footer*/
+#footer {
+
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  min-height: 50vh;
+  padding: 50px 100px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#footer ul li {
+  color: white;
+  list-style: none;
+  margin: 30px 40px;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+
+#footer ul li a:hover {
+  color: #ff4321;
+}
+
+
+.social-links {
+  margin-left: 8%;
+  margin-top: 100px;
+}
+
+.social-links a {
+  font-size: 30px;
+  color: #606163;
+  margin-right: 20px;
+}
+
+.social-links a:hover {
+  color: #ff4321;
+}
+
+
+
+/* ...................... Landing Page........................ */
+
+.landing {
+
+  height: calc(100vh - 112px);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: lightgray;
+  background-image: url('https://images.unsplash.com/photo-1634973357973-f2ed2657db3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG9ubGluZSUyMHNob3BwaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  /* background-blend-mode: lighten; */
+  scale: inherit;
+}
+.landing h1 {
+  margin-top: 50px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: right;
+  color: rgb(199, 79, 79);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.landing h2 {
+  margin-top: 50px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: right;
+  color: rgb(0, 0, 0);
+}

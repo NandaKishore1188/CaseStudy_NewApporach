@@ -5,6 +5,9 @@ import { BiAbacus } from "react-icons/bi";
 import { BiBookReader } from "react-icons/bi";
 import { BiPurchaseTag } from "react-icons/bi";
 import { BiSupport } from "react-icons/bi";
+import { BiLogOutCircle } from "react-icons/bi";
+
+
 import { BiStar } from "react-icons/bi";
 
 import { FaLinkedin } from "react-icons/fa";
@@ -35,10 +38,12 @@ class Home extends Component {
             <img src="logob.png" class="logob" />
             <ul>
               <li><a href="">HOME</a></li>
-              <li><a href="">PRODUCTS</a></li>
+              <li><a href="">ORDERS</a></li>
+              <li><a href="">PROFILE</a></li>
               <li><a href="about.html">ABOUT US</a></li>
               <li><a href="contact.html">CONTACT US</a></li>
-              <li><a href="home.component.js">Log Out</a></li>
+              <li><a href="landing"><BiLogOutCircle/></a></li>
+              
             </ul>
           </nav>
 

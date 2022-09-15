@@ -47,15 +47,30 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 //
 //    }
 
+//	@Override
+//	protected void configure(HttpSecurity http) throws Exception {
+//		http.csrf().disable().authorizeRequests()
+//		.antMatchers("/customers/save").permitAll()
+//		.antMatchers("/authenticate","/customers/save").permitAll()
+//		
+//		.antMatchers("/admin/users/getall","/admin/users/delete/{profileId}","/admin/products/**").hasRole("ADMIN")
+//		.antMatchers("/customers/update/{profileId}",
+//                "/customers/products/getall","/customers/{productName}").hasRole("USER")
+//		.anyRequest().authenticated().and().sessionManagement()
+//		.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+//		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
+//
+//	}
+	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
 		.antMatchers("/customers/save").permitAll()
 		.antMatchers("/authenticate","/customers/save").permitAll()
 		
-		.antMatchers("/admin/users/getall","/admin/users/delete/{profileId}","/admin/products/**").hasRole("ADMIN")
+		.antMatchers("/admin/users/getall","/admin/users/delete/{profileId}","/admin/byid/{productId}","/admin/products/save").hasRole("ADMIN")
 		.antMatchers("/customers/update/{profileId}",
-                "/customers/products/getall","/customers/{productName}").hasRole("USER")
+                "/customers/products/getall","/customers/{productName}","/customers/order").hasRole("USER")
 		.anyRequest().authenticated().and().sessionManagement()
 		.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);

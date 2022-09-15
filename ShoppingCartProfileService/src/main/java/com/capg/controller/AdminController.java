@@ -112,6 +112,11 @@ public class AdminController {
 	        Product[] product = response.getBody();
 	        return (product);
 	    }
+	    
+	    @RequestMapping("/byid/{productId}")
+	    public Product getProductById(@PathVariable("productId")String productId) {
+	        return restTemplate.getForObject("http://ShoppingCartProductService/products/get/" + productId, Product.class);
+	    }
 
 	    //updating any product data by admin
 	    @PutMapping("/products/update/{productId}")

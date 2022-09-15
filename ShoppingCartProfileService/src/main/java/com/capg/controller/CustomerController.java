@@ -93,10 +93,7 @@ public class CustomerController {
         return restTemplate.getForObject("http://ShoppingCartProductService/products/getbyname/" + productName, Product.class);
     }
     
-    @RequestMapping("/byid/{productId}")
-    public Product getProductById(@PathVariable("productId")String productId) {
-        return restTemplate.getForObject("http://ShoppingCartProductService/products/get/" + productId, Product.class);
-    }
+   
 
 
     /************************Ordering the products from here using the resttemplate connection*****************************/

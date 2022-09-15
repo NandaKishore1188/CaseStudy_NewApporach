@@ -4,6 +4,10 @@ import { Router, Switch, Route, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
+
+import CreateProduct from "./components/createproduct.component";
+import Landing from "./components/landing.component";
 import Login from "./components/login.component";
 import Home from "./components/home.component";
 import Admin from "./components/admin.component";
@@ -15,6 +19,7 @@ import { clearMessage } from "./actions/message";
 import { history } from './helpers/history';
 import EventBus from "./common/EventBus";
 import GoogleLoginComponent from "./components/googlebutton.component";
+import landingComponent from "./components/landing.component";
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +31,7 @@ class App extends Component {
     };
 
     history.listen((location) => {
-      props.dispatch(clearMessage()); 
+      props.dispatch(clearMessage());
     });
   }
 
@@ -56,17 +61,17 @@ class App extends Component {
   }
 
   render() {
-    const { currentUser} = this.state;
+    const { currentUser } = this.state;
 
     return (
       <Router history={history}>
         <div>
           <nav className="navbar navbar-expand navbar-dark bg-dark">
-            <Link to={"/Home"} className="navbar-brand">
+            <Link to={"/landing"} className="navbar-brand">
               Shopping Home
             </Link>
             <div className="navbar-nav mr-auto">
-              
+
               {currentUser && (
                 <li className="nav-item">
                   <Link to={"/user"} className="nav-link">
@@ -100,29 +105,31 @@ class App extends Component {
                 <li className="nav-item">
                   <Link to={"/register"} className="nav-link">
                     Sign Up
-                    
+
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link to={"/admin"} className="nav-link">
                     Admin
-                    
+
                   </Link>
-               </li>
+                </li> */}
               </div>
             )}
           </nav>
 
           <div className="container mt-3">
             <Switch>
-              <Route exact path={["/", "/register"]} component={Register} />
+              <Route exact path={["/", "/landing"]} component={Landing} />
+              <Route exact path="/landing" component={Landing} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/home" component={Home} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/profile" component={Profile} />
               <Route exact path="/user" component={User} />
               <Route exact path="/admin" component={Admin} />
+              <Route exact path="/addproduct" component={CreateProduct} />
             </Switch>
           </div>
         </div>
