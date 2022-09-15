@@ -48,13 +48,15 @@ class GoogleLoginComponent extends Component {
           {this.state.isLoggedIn ? (
             <div>
               <h1>Welcome, {this.state.userInfo.name}</h1>
-
+            <nav>
               <GoogleLogout
                 clientId={CLIENT_ID}
                 buttonText={"Logout"}
                 onLogoutSuccess={this.logout}
               ></GoogleLogout>
+              </nav>
             </div>
+            
           ) : (
             <GoogleLogin
               clientId={CLIENT_ID}

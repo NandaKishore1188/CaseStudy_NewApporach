@@ -12,6 +12,10 @@ class AuthService {
         if (response.data.accessToken) {
           localStorage.setItem("user", JSON.stringify(response.data));
         }
+        else
+        {
+          localStorage.setItem("admin", JSON.stringify(response.data));
+        }
 
         return response.data;
       });

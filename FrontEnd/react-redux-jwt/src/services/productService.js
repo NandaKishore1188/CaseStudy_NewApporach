@@ -1,7 +1,7 @@
 import axios from "axios";
 import authHeader from "./auth-header";
 
-const Product_URL = "http://localhost:9091/admin/";
+const Product_URL = "http://localhost:9092/";
 
 class ProductService {
     addProd(productName, productPrice, productQuantity) {
@@ -12,9 +12,7 @@ class ProductService {
         });
       }
 
-    // saveProducts(){
-    //     return axios.post(API_URL + "products/save");
-    // }
+
 
 //   getPublicContent() {
 //     return axios.get(API_URL + "hello");

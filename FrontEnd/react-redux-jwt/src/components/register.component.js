@@ -153,6 +153,8 @@ class Register extends Component {
           this.setState({
             successful: true,
           });
+          alert("user registered successfully");
+          this.props.history.push('/login');
         })
         .catch(() => {
           this.setState({
@@ -195,7 +197,7 @@ class Register extends Component {
                 </div>
 
                 <div className="form-group">
-                <i class="fas fa-envelope prefix grey-text d-flex"></i>
+                  <i class="fas fa-envelope prefix grey-text d-flex"></i>
                   <label htmlFor="emailId">Email</label>
                   <Input
                     type="text"
@@ -247,16 +249,16 @@ class Register extends Component {
                 <div className="form-group">
 
                   <label for="validationCustom04" class="form-label">Gender</label>
-                  <select class="form-select" 
+                  <select class="form-select"
                     id="validationCustom04" required
                     name="gender"
                     onChange={this.onChangeGender}
-                    // validations={[required, gender]}
+                  // validations={[required, gender]}
                   >
                     <option selected>Select</option>
                     <option value="Male">Male</option>
-                    <option value="Male">Female</option>
-                    <option value="Male">Others</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
                   </select>
 
                   <div class="invalid-feedback">
@@ -276,7 +278,7 @@ class Register extends Component {
                   />
                 </div> */}
 
-                
+
 
                 <div class="col-12">
                   <div class="form-check">

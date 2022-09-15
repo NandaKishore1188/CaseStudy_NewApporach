@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { addProd } from "../actions/auth";
 import CheckButton from "react-validation/build/button";
 import { BiLogOutCircle } from "react-icons/bi";
+
 const productName = (value) => {
     if (value.length < 3 || value.length > 30) {
         return (
@@ -39,7 +40,7 @@ const productQuantity = (value) => {
 
 
 
-    class CreateProduct extends Component {
+    class AddProd extends Component {
         constructor(props) {
             super(props);
             this.handleAddProd = this.handleAddProd.bind(this);
@@ -89,11 +90,16 @@ const productQuantity = (value) => {
                 this.props
                     .dispatch(
                         addProd(this.state.productName, this.state.productPrice, this.state.productQuantity)
-                    )
+                        
+                        )
+                    
                     .then(() => {
                         this.setState({
                             successful: true,
+                           
                         });
+                        alert("product added successfully");
+                        this.props.history.push('/admin');
                     })
                     .catch(() => {
                         this.setState({
@@ -153,7 +159,7 @@ const productQuantity = (value) => {
                                             type="text"
                                             className="form-control"
                                             name="productPrice"
-                                            value={this.state.emailId}
+                                            value={this.state.productPrice}
                                             onChange={this.onChangeProductPrice}
                                             // validations={[required, productPrice]}
                                         />
@@ -166,7 +172,7 @@ const productQuantity = (value) => {
                                             type="text"
                                             className="form-control"
                                             name="productQuantity"
-                                            value={this.state.password}
+                                            value={this.state.productQuantity}
                                             onChange={this.onChangeProductQuantity}
                                             // validations={[required, productQuantity]}
                                         />
@@ -205,4 +211,4 @@ const productQuantity = (value) => {
         };
     }
 
-    export default connect(mapStateToProps)(CreateProduct);
+    export default connect(mapStateToProps)(AddProd);

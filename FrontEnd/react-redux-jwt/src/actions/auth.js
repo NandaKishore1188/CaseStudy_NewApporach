@@ -8,6 +8,7 @@ import {
 } from "./types";
 
 import AuthService from "../services/auth.service";
+import ProductService from "../services/productService";
 
 export const register = (fullName, emailId, password,mobileNumber,gender) => (dispatch) => {
   return AuthService.register(fullName, emailId, password,mobileNumber,gender).then(
@@ -47,7 +48,7 @@ export const register = (fullName, emailId, password,mobileNumber,gender) => (di
 
 
 export const addProd = (productName, productPrice, productQuantity) => (dispatch) => {
-  return AuthService.addProd(productName, productPrice, productQuantity).then(
+  return ProductService.addProd(productName, productPrice, productQuantity).then(
     (response) => {
       dispatch({
         type: REGISTER_SUCCESS,

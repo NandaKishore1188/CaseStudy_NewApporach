@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 
-import CreateProduct from "./components/createproduct.component";
+import AddProd from "./components/createproduct.component";
 import Landing from "./components/landing.component";
 import Login from "./components/login.component";
 import Home from "./components/home.component";
@@ -129,7 +129,7 @@ class App extends Component {
               <Route exact path="/profile" component={Profile} />
               <Route exact path="/user" component={User} />
               <Route exact path="/admin" component={Admin} />
-              <Route exact path="/addproduct" component={CreateProduct} />
+              <Route exact path="/addproduct" component={AddProd} />
             </Switch>
           </div>
         </div>
@@ -139,9 +139,9 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-  const { user } = state.auth;
+  const { user,admin } = state.auth;
   return {
-    user,
+    user,admin
   };
 }
 
