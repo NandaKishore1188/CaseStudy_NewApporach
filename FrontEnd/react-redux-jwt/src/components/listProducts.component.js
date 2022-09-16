@@ -16,7 +16,16 @@ class ListProducts extends Component {
         this.state = {
             products:[]
         }
+        this.deleteProduct = this.deleteProduct.bind(this);
 
+    }
+
+    deleteProduct(productId){
+        productService.deleteProduct(productId).then( res => {
+            console.log("productId");
+            this.setState({products: this.state.products.filter(products => products.productId !== productId)});
+            alert("Deleted successfully");
+        });
     }
 
     componentDidMount(){
@@ -53,6 +62,7 @@ class ListProducts extends Component {
                                     <th> Product Name</th>
                                     <th> Product Price</th>
                                     <th> Product Quantity</th>
+                                    <th> Actions</th>
                                     {/* <th> Expiry Date</th>
                                     <th> Actions</th> */}
                                 </tr>
@@ -66,8 +76,11 @@ class ListProducts extends Component {
                                              <td> { product.productName} </td>   
                                              <td> {product.productPrice}</td>
                                              <td> {product.productQuantity}</td>
-                                             {/* <td> {drug.expiryDate}</td> */}
+                                             <td>
+                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.deleteProduct(product.productId)} className="btn btn-danger">Delete </button>
+                                             </td>
                                         </tr>
+                                        
                                     )
                                 }
                             </tbody>
