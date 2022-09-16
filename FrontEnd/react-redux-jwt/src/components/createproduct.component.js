@@ -6,6 +6,15 @@ import { addProd } from "../actions/auth";
 import CheckButton from "react-validation/build/button";
 import { BiLogOutCircle } from "react-icons/bi";
 
+const required = (value) => {
+    if (!value) {
+      return (
+        <div className="alert alert-danger" role="alert">
+          This field is required!
+        </div>
+      );
+    }
+  };
 const productName = (value) => {
     if (value.length < 3 || value.length > 30) {
         return (
@@ -148,7 +157,7 @@ const productQuantity = (value) => {
                                             name="productName"
                                             value={this.state.productName}
                                             onChange={this.onChangeProductName}
-                                            // validations={[required, productName]}
+                                            validations={[required, productName]}
                                         />
                                     </div>
 
@@ -161,7 +170,7 @@ const productQuantity = (value) => {
                                             name="productPrice"
                                             value={this.state.productPrice}
                                             onChange={this.onChangeProductPrice}
-                                            // validations={[required, productPrice]}
+                                            validations={[required, productPrice]}
                                         />
                                     </div>
 
@@ -174,7 +183,7 @@ const productQuantity = (value) => {
                                             name="productQuantity"
                                             value={this.state.productQuantity}
                                             onChange={this.onChangeProductQuantity}
-                                            // validations={[required, productQuantity]}
+                                            validations={[required, productQuantity]}
                                         />
                                     </div>
                                     <div className="form-group">

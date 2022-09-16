@@ -31,11 +31,13 @@ class Admin extends Component {
                                 </ul>
                             </nav>
 
-                            <ul>
+                            <ul >
                                 <li><a href="addproduct">Add Product</a></li>
                                 <li><a href="">Update Product</a></li>
                                 <li><a href="">Delete Product</a></li>
-                                <li><a href="">Get A Product</a></li>
+                                <li><a href="listproducts">Get All Product </a></li>
+
+                                
                             </ul>
 
                         </header>

@@ -11,7 +11,10 @@ class ProductService {
           productQuantity,
         });
       }
-
+      
+      getAllProducts(){
+        return axios.get(Product_URL + 'products/getall');
+    }
 
 
 //   getPublicContent() {
