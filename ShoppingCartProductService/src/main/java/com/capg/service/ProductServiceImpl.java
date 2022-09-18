@@ -57,6 +57,7 @@ public class ProductServiceImpl implements ProductService{
 		Optional<Product> user = this.productsRepository.findById(product.getProductId());
 		if (user.isPresent()) {
 			Product productUpdate = user.get();
+			productUpdate.setProductId(product.getProductId());
 //			productUpdate.setProductType(product.getProductType());
 			productUpdate.setProductName(product.getProductName());
 //			productUpdate.setCategory(product.getCategory());

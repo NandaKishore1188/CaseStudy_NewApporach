@@ -8,6 +8,8 @@ import {
 
 const user = JSON.parse(localStorage.getItem("user"));
 
+// const admin = JSON.parse(localStorage.getItem("admin"));
+
 const initialState = user
   ? { isLoggedIn: true, user }
   : { isLoggedIn: false, user: null };

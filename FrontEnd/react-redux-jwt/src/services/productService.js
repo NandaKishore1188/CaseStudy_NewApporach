@@ -18,6 +18,10 @@ class ProductService {
   deleteProduct(productId) {
     return axios.delete(Product_URL  + 'products/delete/' + productId);
   }
+  
+  updateProd(products, productId){
+    return axios.put(Product_URL  + 'products/update/' + productId, products);
+}
 
   //   getPublicContent() {
   //     return axios.get(API_URL + "hello");

@@ -33,9 +33,11 @@ class Admin extends Component {
 
                             <ul >
                                 <li><a href="addproduct">Add Product</a></li>
-                                <li><a href="">Update Product</a></li>
-                                <li><a href="">Delete Product</a></li>
-                                <li><a href="listproducts">Get All Product </a></li>
+                                <li><a href="updateproduct">Update Product</a></li>
+                                {/* <li><a href="">Delete Product</a></li> */}
+                                <li><a href="listproducts">Get All Products </a></li>
+                                <br/>
+                                <li><a href="listcustomers">Get All Customers </a></li>
 
                                 
                             </ul>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Form from "react-validation/build/form";
-import Input from "react-validation/build/input";
+
 import productService from "../services/productService";
 import { connect } from "react-redux";
 import { BiLogOutCircle } from "react-icons/bi";
@@ -18,6 +17,7 @@ class ListProducts extends Component {
         }
         this.deleteProduct = this.deleteProduct.bind(this);
 
+
     }
 
     deleteProduct(productId){
@@ -27,6 +27,7 @@ class ListProducts extends Component {
             alert("Deleted successfully");
         });
     }
+
 
     componentDidMount(){
         productService.getAllProducts().then((res)=>{
@@ -76,8 +77,10 @@ class ListProducts extends Component {
                                              <td> { product.productName} </td>   
                                              <td> {product.productPrice}</td>
                                              <td> {product.productQuantity}</td>
+                                             {/* <td> {drug.expiryDate}</td> */}
                                              <td>
                                                  <button style={{marginLeft: "10px"}} onClick={ () => this.deleteProduct(product.productId)} className="btn btn-danger">Delete </button>
+
                                              </td>
                                         </tr>
                                         

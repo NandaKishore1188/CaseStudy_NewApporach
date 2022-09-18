@@ -15,10 +15,13 @@ class AuthVerify extends Component {
 
     history.listen(() => {
       const user = JSON.parse(localStorage.getItem("user"));
+      // const admin = JSON.parse(localStorage.getItem("admin"));
 
       if (user) {
         const decodedJwt = parseJwt(user.accessToken);
-
+        // if (admin) {
+        //   const decodedJwt = parseJwt(admin.accessToken);
+        // }
         if (decodedJwt.exp * 1000 < Date.now()) {
           props.logOut();
         }

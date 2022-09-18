@@ -4,7 +4,8 @@ import { Router, Switch, Route, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
+import ListCustomers from "./components/listCustomers.component";
+import UpdateProdu from "./components/updateproduct.component";
 import ListProducts from "./components/listProducts.component";
 import AddProd from "./components/createproduct.component";
 import Landing from "./components/landing.component";
@@ -131,6 +132,8 @@ class App extends Component {
               <Route exact path="/admin" component={Admin} />
               <Route exact path="/addproduct" component={AddProd} />
               <Route exact path="/listproducts" component={ListProducts} />
+              <Route exact path="/updateproduct" component={UpdateProdu} />
+              <Route exact path="/listcustomers" component={ListCustomers} />
  
             </Switch>
           </div>
