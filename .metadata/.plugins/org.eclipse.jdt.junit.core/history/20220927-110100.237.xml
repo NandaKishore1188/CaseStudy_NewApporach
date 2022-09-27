@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ShoppingCartOrdersServiceApplicationTests" project="ShoppingCartOrdersService" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.072" displayname="ShoppingCartOrdersServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]">
+    <testcase name="isOrderExistsById" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.039" displayname="isOrderExistsById()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:isOrderExistsById()]"/>
+    <testcase name="saveOrdersTest" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.01" displayname="saveOrdersTest()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:saveOrdersTest()]"/>
+    <testcase name="contextLoads" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.004" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:contextLoads()]"/>
+    <testcase name="getAllOrdersDataTest" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.011" displayname="getAllOrdersDataTest()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:getAllOrdersDataTest()]"/>
+  </testsuite>
+</testrun>

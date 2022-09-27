@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ShoppingCartOrdersServiceApplicationTests" project="ShoppingCartOrdersService" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.073" displayname="ShoppingCartOrdersServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]">
+    <testcase name="saveOrdersTest" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.038" displayname="saveOrdersTest()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:saveOrdersTest()]"/>
+    <testcase name="contextLoads" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.004" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:contextLoads()]"/>
+    <testcase name="getAllOrdersDataTest" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.027" displayname="getAllOrdersDataTest()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:getAllOrdersDataTest()]"/>
+  </testsuite>
+</testrun>

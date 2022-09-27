@@ -1,0 +1,61 @@
+package com.capg;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.capg.dto.OrderDTO;
+import com.capg.dto.ProductDTO;
+import com.capg.entity.Order;
+import com.capg.entity.Product;
+import com.capg.repository.OrderRepository;
+
+import com.capg.service.OrderServiceImpl;
+
+
+@SpringBootTest
+class ShoppingCartOrdersServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+	 @Mock
+	    private OrderRepository orderRepository;
+
+	    @InjectMocks
+	    OrderServiceImpl orderServiceImpl;
+	    @Test
+        public void getAllProductsDataTest()
+        {
+            List<Order> list = new ArrayList<Order>();
+            Order product1 = new Order(300,"Test300",300,25);
+            Order product2 = new Order(400,"Test400",200,35);
+            Order product3 =new Order(400,"Test400",100,35);
+
+
+            list.add(product1);
+            list.add(product2);
+            list.add(product3);
+
+            when(orderRepository.findAll()).thenReturn(list);
+
+            //test
+            List<OrderDTO> productsDataList = orderServiceImpl.getOrders();
+
+            assertEquals(3, productsDataList.size());
+            verify(orderRepository, times(1)).findAll();
+        }
+
+
+
+}

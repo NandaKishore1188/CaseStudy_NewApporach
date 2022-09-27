@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ShoppingCartProductServiceApplicationTests" project="ShoppingCartProductService" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.capg.ShoppingCartProductServiceApplicationTests" time="0.09" displayname="ShoppingCartProductServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartProductServiceApplicationTests]">
-    <testcase name="getProductsDataByDrugName" classname="com.capg.ShoppingCartProductServiceApplicationTests" time="0.081" displayname="getProductsDataByDrugName()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartProductServiceApplicationTests]/[method:getProductsDataByDrugName()]"/>
-    <testcase name="contextLoads" classname="com.capg.ShoppingCartProductServiceApplicationTests" time="0.007" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartProductServiceApplicationTests]/[method:contextLoads()]"/>
-  </testsuite>
-</testrun>

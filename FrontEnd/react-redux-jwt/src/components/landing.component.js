@@ -93,7 +93,9 @@ class Landing extends Component {
                 <i class="bx bxs-star"><AiFillStar/></i>
                 <i class="bx bxs-star"><AiFillStar/></i>
               </div>
+              
               <div class="price">INR 1500</div>
+              
             </div>
 
             <div class="ac">

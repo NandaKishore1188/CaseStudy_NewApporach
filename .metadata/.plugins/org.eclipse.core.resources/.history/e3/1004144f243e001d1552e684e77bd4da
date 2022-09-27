@@ -1,0 +1,27 @@
+package com.capg;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.capg.repository.OrderRepository;
+
+import com.capg.service.OrderServiceImpl;
+
+
+@SpringBootTest
+class ShoppingCartOrdersServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+	 @Mock
+	    private OrderRepository orderRepository;
+
+	    @InjectMocks
+	    OrderServiceImpl orderServiceImpl;
+
+
+}
