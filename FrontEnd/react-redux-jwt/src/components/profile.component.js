@@ -20,7 +20,7 @@ class Profile extends Component {
           <strong>Id:</strong> {currentUser.id}
         </p>
         <p>
-          <strong>Email:</strong> {currentUser.emailId}
+          <strong>Email:</strong> {this.state.username}
         </p>
         <h1>Welcome to Shopping Cart</h1>
 

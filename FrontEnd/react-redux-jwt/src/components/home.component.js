@@ -42,7 +42,8 @@ class Home extends Component {
               <li><a href="">PROFILE</a></li>
               <li><a href="about.html">ABOUT US</a></li>
               <li><a href="contact.html">CONTACT US</a></li>
-              <li><a href="landing"><BiLogOutCircle/></a></li>
+              <li><a href="landing" title="Log Out"><BiLogOutCircle /></a></li>
+
               
             </ul>
           </nav>
@@ -100,7 +101,10 @@ class Home extends Component {
                 <i class="bx bxs-star"><AiFillStar/></i>
                 <i class="bx bxs-star"><AiFillStar/></i>
               </div>
+             
               <div class="price">INR 1500</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
+              {/* <button type="button" class="btn btn-success">Buy</button> */}
             </div>
 
             <div class="ac">
@@ -116,6 +120,7 @@ class Home extends Component {
                 <i class="bx bx-star"><AiFillStar/></i>
               </div>
               <div class="price">INR 3000</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
 
             <div class="ac">
@@ -131,6 +136,7 @@ class Home extends Component {
                 <i class="bx bx-star"><AiFillStar/></i>
               </div>
               <div class="price">INR 2000</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
             <div class="ac">
               <div class="img-cover">
@@ -145,6 +151,7 @@ class Home extends Component {
                 <i class="bx bx-star"><AiFillStar/></i>
               </div>
               <div class="price">INR 1500</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
             <div class="ac">
               <div class="img-cover">
@@ -159,6 +166,7 @@ class Home extends Component {
                 <i class="bx bx-star"><AiFillStar/></i>
               </div>
               <div class="price">INR 4500</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
             <div class="ac">
               <div class="img-cover">
@@ -173,6 +181,7 @@ class Home extends Component {
                 <i class="bx bx-star"><AiFillStar/></i>
               </div>
               <div class="price">INR 1399</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
           </div>
         </section>
@@ -221,6 +230,7 @@ class Home extends Component {
                 <i class="bx bx-star"></i>
               </div>
               <div class="price">INR 8500</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
 
             <div class="ac">
@@ -236,6 +246,7 @@ class Home extends Component {
                 <i class="bx bx-star"></i>
               </div>
               <div class="price">INR 5000</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
 
             <div class="ac">
@@ -251,6 +262,7 @@ class Home extends Component {
                 <i class="bx bx-star"></i>
               </div>
               <div class="price">INR 1200</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
             <div class="ac">
               <div class="img-cover">
@@ -265,6 +277,7 @@ class Home extends Component {
                 <i class="bx bx-star"></i>
               </div>
               <div class="price">INR 2000</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
             <div class="ac">
               <div class="img-cover">
@@ -278,6 +291,7 @@ class Home extends Component {
                 <i class="bx bx-star"><AiFillStar/></i>
               </div>
               <div class="price">INR 3200</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
             {/* <div class="ac">
               <div class="img-cover">
@@ -306,6 +320,7 @@ class Home extends Component {
                 <i class="bx bx-star"><AiFillStar/></i>
               </div>
               <div class="price">INR 5600</div>
+              <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Buy Now</a>
             </div>
             {/* <div class="ac">
               <div class="img-cover">
@@ -332,8 +347,8 @@ class Home extends Component {
 
           <div class="foot">
             <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">ABOUT US</a></li>
+              <li><a href="home">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
               <li><a href="contact.html">CONTACT US</a></li>
             </ul>
 

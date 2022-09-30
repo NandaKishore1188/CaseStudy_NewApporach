@@ -66,7 +66,6 @@ class Login extends Component {
             alert("Admin Login Successful!! ")
           } else {
             history.push("/Home");
-            // window.location.reload();
             alert("Login Successful!!   "+this.state.username)
           }
          

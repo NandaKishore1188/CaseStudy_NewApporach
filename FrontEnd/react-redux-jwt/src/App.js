@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ListCustomers from "./components/listCustomers.component";
 import UpdateProdu from "./components/updateproduct.component";
+import ListOrders from "./components/listOrders.component";
 import ListProducts from "./components/listProducts.component";
 import AddProd from "./components/createproduct.component";
 import Landing from "./components/landing.component";
@@ -134,7 +135,7 @@ class App extends Component {
               <Route exact path="/listproducts" component={ListProducts} />
               <Route exact path="/updateproduct" component={UpdateProdu} />
               <Route exact path="/listcustomers" component={ListCustomers} />
- 
+              <Route exact path="/listorders" component={ListOrders} />
             </Switch>
           </div>
         </div>

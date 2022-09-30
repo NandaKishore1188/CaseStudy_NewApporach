@@ -44,7 +44,6 @@
     <fullyQualifiedTypeName name="com.capg.exception.ResourceNotFoundException"/>
     <fullyQualifiedTypeName name="org.springframework.http.RequestEntity"/>
     <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
-    <fullyQualifiedTypeName name="com.capg.dto.OrderDTO"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
     <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.index.Indexed"/>
     <fullyQualifiedTypeName name="com.capg.repository.ProductsRepository"/>
@@ -56,8 +55,9 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.capg.entity.Product"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
     <fullyQualifiedTypeName name="com.capg.repository.OrderRepository"/>
     <fullyQualifiedTypeName name="com.capg.service.OrderServiceImpl"/>
     <fullyQualifiedTypeName name="com.capg.entity.Order"/>
-    <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
+    <fullyQualifiedTypeName name="com.capg.dto.OrderDTO"/>
 </qualifiedTypeNameHistroy>

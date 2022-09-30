@@ -26,7 +26,6 @@ public class ProfileServiceImpl implements ProfileService {
 		// TODO Auto-generated method stub
 		UserProfile userProfile = new UserProfile(userProfileDTO);
 //        userProfile.setProduct(productInfo.getProductDetails(userProfile.getProductId()));
-
 		return new UserProfileDTO(profileRepository.save(userProfile));	
 	}
 

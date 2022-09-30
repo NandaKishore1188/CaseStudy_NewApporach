@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ShoppingCartOrdersServiceApplicationTests.saveOrdersTest" project="ShoppingCartOrdersService" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.0" displayname="ShoppingCartOrdersServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]">
-    <testcase name="saveOrdersTest" classname="com.capg.ShoppingCartOrdersServiceApplicationTests" time="0.0" displayname="saveOrdersTest()" uniqueid="[engine:junit-jupiter]/[class:com.capg.ShoppingCartOrdersServiceApplicationTests]/[method:saveOrdersTest()]"/>
-  </testsuite>
-</testrun>

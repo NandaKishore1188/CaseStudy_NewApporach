@@ -108,6 +108,13 @@ public class CustomerController {
         String s = restTemplate.postForObject("http://ShoppingCartOrdersService/orders/save", order1, String.class);
         return ResponseEntity.ok(s);
         }
+    @GetMapping("/order/getall")
+    public Order[] getAllOrders() throws ResourceNotFoundException{
+        ResponseEntity<Order[]> response =
+                restTemplate.getForEntity("http://ShoppingCartOrdersService/orders/getall",Order[].class);
+        Order[] order = response.getBody();
+        return (order);
+    }
 
     }
 	
